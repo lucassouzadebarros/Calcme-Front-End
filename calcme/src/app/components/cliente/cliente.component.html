@@ -1,0 +1,33 @@
+<div class="container_form">
+
+  <h1>Formulário de Cadastro</h1>
+
+  <form (ngSubmit)="submit()" [formGroup]="form" #ngFormDir = "ngForm">
+
+    <div class="form_grupo">
+      <label for="nome" class="form_label">Nome</label>
+      <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required formControlName="nome">
+    </div>
+
+    <div class="form_grupo">
+      <label for="email" class="form_label">Email</label>
+      <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required formControlName="email">
+    </div>
+
+    <div class="form_grupo">
+      <label for="telefone" class="form_label">Telefone</label>
+      <input type="text" name="telefone" class="form_input" id="telefone" placeholder="Telefone" required formControlName="telefone">
+    </div>
+
+
+      <div class="submit">
+
+        <input type="hidden" name="acao" value="enviar">
+        <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+
+      </div>
+  </form>
+
+</div><!--container_form-->
+
+
